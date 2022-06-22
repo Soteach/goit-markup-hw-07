@@ -1,5 +1,5 @@
 :root {
-  --accent-color:#2196F3;
+  --accent-color: #2196F3;
   --accent-logo-color:#000000;
   --hero-color:#2F303A;
   --main-white-color:#FFFFFF;
@@ -404,7 +404,7 @@ img {
   font-size: 14px;
   line-height: 1.1428571429;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--main-font-color);
   padding-top: 15px;
   padding-bottom: 15px;
   align-items: center;

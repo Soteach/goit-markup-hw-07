@@ -1,27 +1,23 @@
-.logo-link-footer {
-    font-family: 'Raleway', sans-serif;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: calc(31/26);
-        letter-spacing: 0.03em;
+.footer__logo {
+        @include fontStyle (26px, 700, 0.03em, 1.2);
         color: var(--accent-color);
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);     
+        @include tranSition ();
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+
     }
-    
-    .logo-link-footer:hover,:focus {
-        color: var(--accent-color);
-    }
-    
-    .footer-part-logo {
-        font-family: 'Raleway', sans-serif;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: calc(31/26);
-        letter-spacing: 0.03em;
+        
+    .footer__logo--part {
+        @include fontStyle (26px, 700, 0.03em, 1.2);
         color: var(--main-white-color);
-    }
-    
-    .footer-part-logo:hover {
+        &:hover {
         color:var(--accent-color) ;
     }
+    }
+    
+    .footer__logo{
+    margin-bottom: 20px;
+}

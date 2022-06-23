@@ -77,10 +77,7 @@
 .link-thumb-wrap {
     display: block;
 }
-.work-items:hover .product-description {
-    transform: translateY(0%);
-}
-
+.work-items:hover .product-description,
 .work-items:focus .product-description {
     transform: translateY(0%);
 }

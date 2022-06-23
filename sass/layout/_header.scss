@@ -26,15 +26,11 @@
 }
 
 .nav__link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16/14);
-    letter-spacing: 0.02em;
-    color: var(--accent-logo-color);;
+    @include fontStyle (14px, 500, 0.02em, 1.14);
+    color: var(--accent-logo-color);
     padding-top: 10px;
     padding-bottom: 10px;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include tranSition ();
 
     &:hover, :focus {
         color:var(--accent-color);
@@ -70,16 +66,12 @@
 .connect {
     & a {
     display: flex;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16/14);
-    letter-spacing: 0.02em;
+    @include fontStyle (14px, 500, 0.02em, 1.14);
     color: var(--main-font-color);
     padding-top: 15px;
     padding-bottom: 15px;
     align-items: center;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include tranSition ();
 
     &:hover, 
     &:focus{

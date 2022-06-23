@@ -730,6 +730,8 @@ img {
   height: 41px;
   width: 47px;
   padding: 16px 32px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-link {
@@ -817,6 +819,9 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer__link:not(:last-child) {
+  margin-bottom: 10px;
+}
 .footer__link:hover, .footer__link:focus {
   color: var(--accent-color);
 }
@@ -830,10 +835,6 @@ address {
 }
 address :hover, address :focus {
   color: var(--accent-color);
-}
-
-.footer__link:not(:last-child) {
-  margin-bottom: 10px;
 }
 
 .adress {
@@ -874,13 +875,18 @@ address :hover, address :focus {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+.worker-soc-icon {
+  fill: var(--main-white-color);
+}
+
+.social-links {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .social-links:hover,
 .social-links:focus {
   background-color: var(--accent-color);
-}
-
-.worker-soc-icon {
-  fill: var(--main-white-color);
 }
 
 .social-links:hover .worker-soc-icon {

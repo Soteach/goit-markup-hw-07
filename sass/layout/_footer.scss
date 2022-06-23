@@ -18,11 +18,14 @@
     color: rgba(255, 255, 255, 0.6);
     @include tranSition ();
 
+    &:not(:last-child){
+        margin-bottom: 10px;
+    }
+
     &:hover,
     &:focus {
         color: var(--accent-color);
     }
-
 }
 
 address {
@@ -33,11 +36,6 @@ address {
     :hover,:focus {
         color: var(--accent-color);
     }
-
-}
-
-.footer__link:not(:last-child){
-    margin-bottom: 10px;
 }
 
 .adress {
@@ -76,13 +74,17 @@ border-radius: 50%;
 background-color: rgba(255, 255, 255, 0.1);
 }
 
+.worker-soc-icon {
+    fill: var(--main-white-color);
+}
+
+.social-links {
+    @include tranSition ();
+}
+
 .social-links:hover,
 .social-links:focus{
     background-color: var(--accent-color);
-}
-
-.worker-soc-icon {
-    fill: var(--main-white-color);
 }
 
 .social-links:hover .worker-soc-icon

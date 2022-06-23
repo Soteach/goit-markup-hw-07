@@ -8,6 +8,7 @@
     height: 41px;
     width: 47px;
     padding: 16px 32px;
+    @include tranSition ();
 }
 
 .client-link{
